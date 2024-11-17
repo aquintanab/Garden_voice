@@ -53,7 +53,7 @@ def send_mqtt_message(message):
     try:
         client = mqtt.Client()
         client.connect(MQTT_BROKER, MQTT_PORT, 60)
-        client.publish("Eden", message)
+        client.publish("sensor_data", message)
         client.disconnect()
         return True
     except Exception as e:
