@@ -120,10 +120,6 @@ os.environ['OPENAI_API_KEY'] = st.secrets["settings"]["key"] #ke
 
 #st.write(st.secrets["settings"]["key"])
 
-# Opción 1: Usando markdown simple
-st.markdown("[Control por voz](https://controlporvoz.streamlit.app/)")
-
-# Opción 2: Usando un botón estilizado con HTML
 st.markdown("""
     <a href='https://controlporvoz.streamlit.app/' target='_blank'>
         <button style='
