@@ -21,7 +21,7 @@ import pytz
 
 MQTT_BROKER = "broker.mqttdashboard.com"
 MQTT_PORT = 1883
-MQTT_TOPIC = "sensor_AQB"
+MQTT_TOPIC = "riego_Aqb"
 
 # Variables de estado para los datos del sensor
 if 'sensor_data' not in st.session_state:
@@ -53,7 +53,7 @@ def send_mqtt_message(message):
     try:
         client = mqtt.Client()
         client.connect(MQTT_BROKER, MQTT_PORT, 60)
-        client.publish("UMI/VOICE", message)
+        client.publish("Eden", message)
         client.disconnect()
         return True
     except Exception as e:
