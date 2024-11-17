@@ -74,7 +74,7 @@ def get_mqtt_message():
             st.error(f"Error al procesar mensaje: {e}")
     
     try:
-        client = mqtt.Client('Nana')
+        client = mqtt.Client()
         client.on_message = on_message
         client.connect(MQTT_BROKER, MQTT_PORT, 60)
         client.subscribe(MQTT_TOPIC)
