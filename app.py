@@ -120,7 +120,7 @@ os.environ['OPENAI_API_KEY'] = st.secrets["settings"]["key"] #ke
 
 #st.write(st.secrets["settings"]["key"])
 
-pdfFileObj = open('plantas.pdf', 'rb')
+pdfFileObj = open('Plantas.pdf', 'rb')
  
 # creating a pdf reader object
 pdfReader = PyPDF2.PdfReader(pdfFileObj)
