@@ -107,7 +107,7 @@ with st.sidebar:
     """
                 )            
 
-st.title('Hola!!! Soy UMI 💬')
+st.title('Hola!!! Soy EDEN 🌱')
 #image = Image.open('Instructor.png')
 #st.image(image)
 with open('Garden_v.json') as source:
