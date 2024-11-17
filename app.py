@@ -100,18 +100,13 @@ except:
 
 with st.sidebar:
     st.subheader("Que es Garden Voice?")
-    St.write(
+    st.write(
     """Es un sistema autonomo que te ayudará a mantener la salud de tus plantas.
        
        
     """
                 ) 
-    st.write(
-    """EDEN resolverá todas las preguntas que tengas sobre tus plantas.
-       
-       
-    """
-                )            
+    st.subheader("EDEN resolverá todas las preguntas que tengas sobre tus plantas.")            
 
 st.title('Hola!!! Soy EDEN 🌱')
 #image = Image.open('Instructor.png')
