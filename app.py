@@ -106,7 +106,7 @@ with st.sidebar:
        
     """
                 ) 
-    st.subheader1("EDEN resolverá las preguntas que tengas sobre tus plantas.")           
+    st.subheader("EDEN resolverá las preguntas que tengas sobre tus plantas.")           
 
 st.title('Hola!!! Soy EDEN 🌱')
 #image = Image.open('Instructor.png')
