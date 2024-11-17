@@ -99,13 +99,14 @@ except:
     pass
 
 with st.sidebar:
-    st.subheader("Que es un sistema Experto?")
-    st.write(
-    """UMI resolverá dudas sobre las dudas que tengas.
+    st.subheader("Que es Garden Voice?")
+    St.write(
+    """Es un sistema autonomo que te ayudará a mantener la salud de tus plantas.
        
        
     """
-                )            
+                ) 
+    st.subheader1("EDEN resolverá las preguntas que tengas sobre tus plantas.")           
 
 st.title('Hola!!! Soy EDEN 🌱')
 #image = Image.open('Instructor.png')
