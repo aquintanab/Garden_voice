@@ -110,7 +110,7 @@ with st.sidebar:
 st.title('Hola!!! Soy UMI 💬')
 #image = Image.open('Instructor.png')
 #st.image(image)
-with open('umbird.json') as source:
+with open('Garden_v.json') as source:
      animation=json.load(source)
 st.lottie(animation,width =350)
 
@@ -119,6 +119,8 @@ st.lottie(animation,width =350)
 os.environ['OPENAI_API_KEY'] = st.secrets["settings"]["key"] #ke
 
 #st.write(st.secrets["settings"]["key"])
+
+st.link_button("Control por voz", "https://controlporvoz.streamlit.app/")
 
 pdfFileObj = open('Plantas.pdf', 'rb')
  
