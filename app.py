@@ -120,7 +120,23 @@ os.environ['OPENAI_API_KEY'] = st.secrets["settings"]["key"] #ke
 
 #st.write(st.secrets["settings"]["key"])
 
-st.link_button("Control por voz", "https://controlporvoz.streamlit.app/")
+# Opción 1: Usando markdown simple
+st.markdown("[Control por voz](https://controlporvoz.streamlit.app/)")
+
+# Opción 2: Usando un botón estilizado con HTML
+st.markdown("""
+    <a href='https://controlporvoz.streamlit.app/' target='_blank'>
+        <button style='
+            background-color: #FF4B4B;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 4px 2px;
+        '>Control por voz</button>
+    </a>
+    """, unsafe_allow_html=True)
 
 pdfFileObj = open('Plantas.pdf', 'rb')
  
